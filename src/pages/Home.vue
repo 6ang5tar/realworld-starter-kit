@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import PopularTags from "../components/PopularTags.vue";
+import PopularTags from "../components/PopularTagList.vue";
 </script>
 
 <template>
