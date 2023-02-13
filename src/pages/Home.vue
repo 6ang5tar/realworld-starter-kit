@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import PopularTags from "../components/PopularTagList.vue";
-</script>
-
 <template>
   <div class="home-page">
     <div class="banner">
@@ -76,3 +72,7 @@ import PopularTags from "../components/PopularTagList.vue";
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import PopularTags from "../components/PopularTagList.vue";
+</script>

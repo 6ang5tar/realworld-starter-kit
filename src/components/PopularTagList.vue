@@ -1,12 +1,3 @@
-<script setup lang="ts">
-import { ref } from "vue";
-import { api } from "../api";
-
-const tags = ref<String[]>([]);
-
-tags.value = await api.tags.getTags().then((res) => res.data.tags);
-</script>
-
 <template>
   <div class="col-md-3">
     <div class="sidebar">
@@ -18,3 +9,12 @@ tags.value = await api.tags.getTags().then((res) => res.data.tags);
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref } from "vue";
+import { api } from "../api";
+
+const tags = ref<String[]>([]);
+
+tags.value = await api.tags.getTags().then((res) => res.data.tags);
+</script>
