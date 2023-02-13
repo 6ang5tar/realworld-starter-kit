@@ -18,11 +18,14 @@
       </button>
     </div>
     <!-- TODO article route -->
-    <a href="/article/{{ article.slug }}" class="preview-link">
+    <router-link
+      :to="{ name: 'article', params: { slug: article.slug } }"
+      class="preview-link"
+    >
       <h1>{{ article.title }}</h1>
       <p>{{ article.description }}</p>
       <span>Read more...</span>
-    </a>
+    </router-link>
   </div>
 </template>
 
